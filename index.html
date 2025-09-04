@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo" title="University Management System">
+            <h2>Skill<span class="danger">F</span>orge</h2>
+        </div>
+        <div class="navbar">
+            <a href="index.html" class="active">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="courses.html" onclick="timeTableAll()">
+                <span class="material-icons-sharp icon">menu_book</span>
+                <h3>Courses</h3>
+            </a>
+            <a href="contact.html">
+                <span class="material-icons-sharp icon">call</span>
+                <h3>Contact Us</h3>
+            </a>
+            <a href="register.html">
+                <span class="material-icons" onclick="">person_add</span>
+                <h3>Login/Register</h3>
+            </a>
+        </div>
+
+    </header>
+
+    <main class="page">
+        <div class="container">
+            <div class="home-action-section">
+                <h2>Welcome to SkillForge!</h2>
+                <p>Unlock your potential with our curated courses and resources.</p>
+                <button class="explore-btn">Explore Courses</button>
+            </div>
+            <img src="https://img-c.udemycdn.com/notices/web_carousel_slide/image/baca98dd-2732-4f6a-bfb5-cc176a57ed7c.jpg"
+                alt="" width="1340" height="400" loading="eager">
+
+            <!-- ...existing code... -->
+            <div class="courses-section">
+                <div class="course-box">
+                    <h3>Web Development</h3>
+                    <p>Learn HTML, CSS, JavaScript, and modern frameworks to build responsive websites.</p>
+                    <button class="explore-btn">View Course</button>
+                    <div class="course-popup">
+                        <p>Ready to start Web Development?</p>
+                        <button class="join-btn">Join Now</button>
+                    </div>
+                </div>
+                <div class="course-box">
+                    <h3>Data Science</h3>
+                    <p>Master Python, data analysis, machine learning, and visualization techniques.</p>
+                    <button class="explore-btn">View Course</button>
+                    <div class="course-popup">
+                        <p>Ready to start Data Science?</p>
+                        <button class="join-btn">Join Now</button>
+                    </div>
+                </div>
+                <div class="course-box">
+                    <h3>UI/UX Design</h3>
+                    <p>Design user-friendly interfaces and experiences with Figma, Adobe XD, and more.</p>
+                    <button class="explore-btn">View Course</button>
+                    <div class="course-popup">
+                        <p>Ready to start UI/UX Design?</p>
+                        <button class="join-btn">Join Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- ...existing code... -->
+
+
+            <!-- ...existing code... -->
+            <div class="courses-section">
+                <!-- ...course boxes... -->
+            </div>
+
+            <!-- Quotes Section -->
+            <div class="quotes-section">
+                <div class="quote-box">
+                    <span class="quote-icon">&#8220;</span>
+                    <p class="quote">"SkillForge helped me land my first web developer job. The courses are practical
+                        and easy to follow!"</p>
+                    <div class="profile">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Doe">
+                        <div>
+                            <span class="name">John Doe</span>
+                            <span class="role">Web Developer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quote-box">
+                    <span class="quote-icon">&#8220;</span>
+                    <p class="quote">"The Data Science track is amazing. I learned Python and machine learning from
+                        scratch."</p>
+                    <div class="profile">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Singh">
+                        <div>
+                            <span class="name">Priya Singh</span>
+                            <span class="role">Data Analyst</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quote-box">
+                    <span class="quote-icon">&#8220;</span>
+                    <p class="quote">"UI/UX Design lessons are top-notch. My portfolio improved a lot thanks to
+                        SkillForge."</p>
+                    <div class="profile">
+                        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Alex Kim">
+                        <div>
+                            <span class="name">Alex Kim</span>
+                            <span class="role">UI/UX Designer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quote-box">
+                    <span class="quote-icon">&#8220;</span>
+                    <p class="quote">"Great community and support. The instructors really care about your progress."</p>
+                    <div class="profile">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sara Lee">
+                        <div>
+                            <span class="name">Sara Lee</span>
+                            <span class="role">Student</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ...existing code... -->
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Our Team</h3>
+            <div class="team">
+                <div><a href="https://www.instagram.com/azhar.khan1011/">Azhar Khan</a></div>
+                <div><a>Aviraj Singh Tomar</a></div>
+                <div><a href="https://www.instagram.com/atul_agrawal.18/">Atul Agrawal</a></div>
+                <div><a href="https://www.instagram.com/bhavya__1845/">Bhavya Gupta</a></div>
+            </div>
+            <div class="socials">
+                <a href="#"><span class="material-icons-sharp">facebook</span></a>
+                <a href="https://github.com/Newbie-coder91" target="_blank" title="GitHub">
+                    <!-- GitHub SVG icon -->
+                    <svg height="24" width="24" viewBox="0 0 24 24" fill="#000" style="vertical-align: top;">
+                        <path
+                            d="M12 2C6.477 2 2 6.484 2 12.012c0 4.418 2.867 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.529 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .267.18.579.688.481C19.135 20.175 22 16.427 22 12.012 22 6.484 17.523 2 12 2z" />
+                    </svg>
+                </a>
+                <a href="#"><span class="material-icons-sharp">email</span></a>
+            </div>
+            <div class="bottom-line">
+                &copy; Copyright 2025 | All Rights Reserved
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const sideMenu = document.querySelector("aside");
+            const profileBtn = document.querySelector("#profile-btn");
+            const themeToggler = document.querySelector(".theme-toggler");
+            const nextDay = document.getElementById('nextDay');
+            const prevDay = document.getElementById('prevDay');
+
+            // Profile button toggle for side menu
+            profileBtn.onclick = function () {
+                sideMenu.classList.toggle('active');
+            }
+
+            // Scroll event to remove side menu and add/remove header active class
+            window.onscroll = () => {
+                sideMenu.classList.remove('active');
+                if (window.scrollY > 0) {
+                    document.querySelector('header').classList.add('active');
+                } else {
+                    document.querySelector('header').classList.remove('active');
+                }
+            }
+
+            // Theme toggle function
+            const applySavedTheme = () => {
+                const isDarkMode = localStorage.getItem('dark-theme') === 'true';
+                if (isDarkMode) {
+                    document.body.classList.add('dark-theme');
+                    themeToggler.querySelector('span:nth-child(1)').classList.add('active');
+                    themeToggler.querySelector('span:nth-child(2)').classList.remove('active');
+                } else {
+                    document.body.classList.remove('dark-theme');
+                    themeToggler.querySelector('span:nth-child(1)').classList.remove('active');
+                    themeToggler.querySelector('span:nth-child(2)').classList.add('active');
+                }
+            }
+
+            // Set the initial theme based on localStorage
+            applySavedTheme();
+
+            // Toggle theme function
+            themeToggler.onclick = function () {
+                // Toggle dark theme class on body
+                document.body.classList.toggle('dark-theme');
+
+                // Toggle active class on the theme toggler spans
+                themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
+                themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
+
+                // Save the theme preference in localStorage
+                localStorage.setItem('dark-theme', document.body.classList.contains('dark-theme'));
+            }
+
+            // Function to set timetable data
+            let setData = (day) => {
+                document.querySelector('table tbody').innerHTML = '';  // Clear previous table data
+                let daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                document.querySelector('.timetable div h2').innerHTML = daylist[day];
+
+                // Define subjects for each day (you might need to update this with real data)
+                let daySchedule = [];
+                switch (day) {
+                    case 0: daySchedule = Sunday; break;
+                    case 1: daySchedule = Monday; break;
+                    case 2: daySchedule = Tuesday; break;
+                    case 3: daySchedule = Wednesday; break;
+                    case 4: daySchedule = Thursday; break;
+                    case 5: daySchedule = Friday; break;
+                    case 6: daySchedule = Saturday; break;
+                }
+
+                // Append timetable data to table
+                daySchedule.forEach(sub => {
+                    const tr = document.createElement('tr');
+                    const trContent = `
+                <td>${sub.time}</td>
+                <td>${sub.roomNumber}</td>
+                <td>${sub.subject}</td>
+                <td>${sub.type}</td>
+            `;
+                    tr.innerHTML = trContent;
+                    document.querySelector('table tbody').appendChild(tr);
+                });
+            }
+
+            // Get current day and set timetable on page load
+            let now = new Date();
+            let today = now.getDay();  // Get current day (0 - 6)
+            let day = today;  // To prevent today value from changing
+
+            // Function to toggle timetable visibility
+            function timeTableAll() {
+                document.getElementById('timetable').classList.toggle('active');
+                setData(today);
+                document.querySelector('.timetable div h2').innerHTML = "Today's Timetable";
+            }
+
+            // Event listeners for next and previous day buttons
+            nextDay.onclick = function () {
+                day <= 5 ? day++ : day = 0;  // If-else one-liner
+                setData(day);
+            }
+
+            prevDay.onclick = function () {
+                day >= 1 ? day-- : day = 6;  // Move to previous day
+                setData(day);
+            }
+
+            // Set data on page load
+            setData(day);
+            document.querySelector('.timetable div h2').innerHTML = "Today's Timetable";  // Set heading on load
+        });
+
+    </script>
+</body>
+
+</html>

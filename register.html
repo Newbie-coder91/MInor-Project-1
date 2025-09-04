@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        header {
+            position: relative;
+        }
+
+        .change-password-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 90vh;
+        }
+
+        .change-password-container form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: var(--border-radius-2);
+            padding: 3.5rem;
+            background-color: var(--color-white);
+            box-shadow: var(--box-shadow);
+            width: 95%;
+            max-width: 32rem;
+        }
+
+        .change-password-container form:hover {
+            box-shadow: none;
+        }
+
+        .change-password-container form input[type=password] {
+            border: none;
+            outline: none;
+            border: 1px solid var(--color-light);
+            background: transparent;
+            height: 2rem;
+            width: 100%;
+            padding: 0 .5rem;
+        }
+
+        .change-password-container form input[type=name] {
+            border: none;
+            outline: none;
+            border: 1px solid var(--color-light);
+            background: transparent;
+            height: 2rem;
+            width: 100%;
+            padding: 0 .5rem;
+        }
+
+        .change-password-container form .box {
+            padding: .5rem 0;
+        }
+
+        .change-password-container form .box p {
+            line-height: 2;
+        }
+
+        .change-password-container form h2+p {
+            margin: .4rem 0 1.2rem 0;
+        }
+
+        #signup-btn {
+            color: var(--color-primary);
+        }
+
+        .btn {
+            background: none;
+            border: none;
+            border-radius: var(--border-radius-1);
+            border: 1px solid var(--color-primary);
+            padding: .5rem 1rem;
+            color: var(--color-white);
+            background-color: var(--color-primary);
+            cursor: pointer;
+            margin: 1rem 1.5rem 1rem 0;
+            margin-top: 1.5rem;
+        }
+
+        .btn:hover {
+            color: black;
+            border: 1px solid gray;
+            background: whitesmoke;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo" title="University Management System">
+            <h2>Skill<span class="danger">F</span>orge</h2>
+        </div>
+        <div class="navbar">
+            <a href="index.html">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="courses.html" onclick="timeTableAll()">
+                <span class="material-icons-sharp icon">menu_book</span>
+                <h3>Courses</h3>
+            </a>
+            <a href="contact.html">
+                <span class="material-icons-sharp icon">call</span>
+                <h3>Contact Us</h3>
+            </a>
+            <a href="#" class="active">
+                <span class="material-icons" onclick="">person_add</span>
+                <h3>Login/Register</h3>
+            </a>
+        </div>
+
+    </header>
+
+    <div class="change-password-container">
+        <form action="">
+            <h2>Login Page</h2>
+            <p class="text-muted">Your new password must be different from previous used passwords.</p>
+            <div class="box">
+                <p class="text-muted">Username</p>
+                <input type="name" id="currentpass">
+            </div>
+            <div class="box">
+                <p class="text-muted">Password</p>
+                <input type="password" id="newpass">
+            </div>
+            <div class="box">
+                <p class="text-muted">Confirm Password</p>
+                <input type="password" id="confirmpass">
+            </div>
+            <div class="button">
+                <input type="submit" value="Continue" class="btn">
+                <a href="index.html" class="text-muted">Cancel</a>
+            </div>
+            <a href="#">
+                <p>Don't have an account? <a href="registration.html" id="signup-btn">Sign Up</a></p>
+            </a>
+        </form>
+    </div>
+    <script>
+        document.querySelector('.change-password-container form').addEventListener('submit', function (e) {
+            const pwd = document.getElementById('newpass').value;
+            const cpwd = document.getElementById('confirmpass').value;
+            if (pwd !== cpwd) {
+                alert('Passwords do not match!');
+                e.preventDefault();
+            } else {
+                e.preventDefault(); // Prevent default form submission
+                alert('Login successful! Redirecting to Home page.');
+                window.location.href = "home.html";
+            }
+        });
+    </script>
+
+</body>
+
+</html>
