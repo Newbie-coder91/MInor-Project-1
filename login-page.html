@@ -82,9 +82,9 @@
             align-items: center;
             justify-content: center;
             border-radius: 6px;
-            font-size: 18px;
+            font-size: 16px;
             cursor: pointer;
-            font-family: 'Satoshi', sans-serif;
+            font-family: 'Poppins', sans-serif;
             font-weight: 400;
             border: 1px solid #dadad8;
         }
@@ -106,9 +106,9 @@
             align-items: center;
             justify-content: center;
             border-radius: 6px;
-            font-size: 18px;
+            font-size: 16px;
             cursor: pointer;
-            font-family: 'Satoshi', sans-serif;
+            font-family: 'Poppins', sans-serif;
             font-weight: 400;
             border: 1px solid #dadad8;
         }
@@ -134,8 +134,67 @@
 
         .signup-section a {
             text-decoration: none;
-            color: var(--color-primary);
+            color: #5766ec;
             font-weight: 600;
+        }
+
+        .signup-section a:hover {
+            color: var(--color-primary);
+            transform: color 0.3s;
+        }
+
+        .login-footer {
+            background: #030914;
+            padding: 6rem 0 20px 0;
+            text-align: center;
+            font-family: 'Satoshi', Arial, sans-serif;
+        }
+
+        .thought h5 {
+            color: whitesmoke;
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 4rem;
+        }
+
+        .footer-content h3 {
+            color: whitesmoke;
+            margin-bottom: 3rem;
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+        .team {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-bottom: 18px;
+        }
+
+        .team a div {
+            color: whitesmoke;
+            background: rgba(115, 128, 236, 0.08);
+            padding: 8px 18px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            font-size: 1rem;
+            margin: 4px 0;
+        }
+
+        .team a div:hover {
+            color: #030914;
+            border: 1px solid gray;
+            background: whitesmoke;
+            transition: color ease 0.4s, background ease 0.4s;
+        }
+
+        .bottom-line {
+            border-top: 1px solid #444;
+            margin-top: 4rem;
+            padding-top: 12px;
+            font-size: 0.95rem;
+            color: whitesmoke;
         }
     </style>
 
@@ -207,6 +266,33 @@
 
         </div>
     </main>
+
+    <footer class="login-footer">
+        <div class="thought">
+            <h5>Empowering learners, inspiring growth, and shaping the future—one skill at a time.</h5>
+        </div>
+        <div class="footer-content">
+            <h3>Our Team</h3>
+            <div class="team">
+                <a href="https://www.instagram.com/azhar.khan1011/">
+                    <div>Azhar Khan</div>
+                </a>
+                <a href="aviraj.html">
+                    <div>Aviraj Singh Tomar</div>
+                </a>
+                <a href="https://www.instagram.com/bhavya__1845/">
+                    <div>Bhavya Gupta</div>
+                </a>
+                <a href="https://www.instagram.com/atul_agrawal.18/">
+                    <div>Atul Agrawal</div>
+                </a>
+            </div>
+            <div class="bottom-line">
+                &copy; Copyright 2025 | All Rights Reserved
+            </div>
+        </div>
+
+    </footer>
 
 
 </body>
