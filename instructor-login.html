@@ -22,14 +22,14 @@
             align-items: center;
             justify-content: center;
             width: 40%;
-            height: 100vh;
+            height: 100%;
             padding: auto 0;
             gap: 2rem;
         }
 
-        .container-login .box {
+        .container-login form {
             width: 60%;
-            height: 20vh;
+            height: auto;
             margin: 0;
         }
 
@@ -56,7 +56,8 @@
         }
 
 
-        .container-login input {
+        .container-login input[type="name"],
+        .container-login input[type="password"] {
             border: none;
             outline: none;
             border: 1px solid rgb(93, 90, 90);
@@ -74,7 +75,9 @@
             color: var(--color-primary);
         }
 
-        .btn {
+
+        .container-login input[type="submit"] {
+            width: 100%;
             border: none;
             border-radius: 0.5rem;
             padding: 16px 20px;
@@ -87,20 +90,10 @@
             font-size: 16px;
         }
 
-        .btn a {
-            color: whitesmoke;
-        }
-
-        .btn:hover {
+        .container-login input[type="submit"] :hover {
             color: black;
             border: 1px solid gray;
-            background: whitesmoke;
-        }
-
-        .btn a :hover {
-            color: black;
-            border: 1px solid gray;
-            background: whitesmoke;
+            background-color: whitesmoke;
         }
 
         .container-left {
@@ -146,38 +139,21 @@
             cursor: pointer;
         }
 
+
+        .container-login .bottom {
+            margin-top: 0;
+            display: flex;
+            height: 5vh;
+            width: 60%;
+            align-items: center;
+            justify-content: center;
+        }
+
         .container-login p {
-            margin-top: 36px;
             font-family: 'Poppins', sans-serif;
             color: #121418;
             font-size: 16px;
             font-weight: 100;
-        }
-
-
-        .separator-line {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 80%;
-            margin: 1.5rem 0 2rem 3rem;
-
-        }
-
-        .separator-line::before,
-        .separator-line::after {
-            content: "";
-            flex: 1;
-            border-bottom: 1px solid #b4b4bb;
-        }
-
-        .separator-line span {
-            align-items: center;
-            padding: 0 16px;
-            color: #b4b4bb;
-            font-family: 'Satoshi', sans-serif;
-            font-size: 16px;
-            letter-spacing: 2px;
         }
     </style>
 
@@ -185,6 +161,26 @@
 
 <body>
     <main>
+
+        <div class="container-login">
+            <div class="top">
+                <h1>Welcome back!</h1>
+                <h1>Login to your account</h1>
+                <p class="text-muted">It's nice to see you again.</p>
+            </div>
+            <form class="box">
+                <input type="name" name="username" placeholder="Your username or email">
+                <input type="password" name="password" placeholder="Your password">
+
+                <input type="submit" value="login" class="submit-btn">
+            </form>
+
+            <div class="bottom">
+                <p>Don't have an account? <a href="instructor-signup.html" id="signup-btn">Sign Up</a></p>
+            </div>
+        </div>
+
+
         <div class="container-left">
             <div class="head">
                 <h2>Welcome To</h2>
@@ -193,43 +189,7 @@
                 <a href="">Know more</a>
             </div>
         </div>
-
-        <div class="container-login">
-            <div class="top">
-                <h1>Welcome back!</h1>
-                <h1>Login to your account</h1>
-                <p class="text-muted">It's nice to see you again. Ready to Learn?</p>
-            </div>
-            <div class="box">
-                <input type="name" id="currentpass" placeholder="Your username or email">
-                <input type="password" id="newpass" placeholder="Your password">
-                <a href="">
-                    <div class="btn">Login</div>
-                </a>
-
-                <div class="separator-line">
-                    <span>or</span>
-                </div>
-            </div>
-
-            <p>Don't have an account? <a href="registration.html" id="signup-btn">Sign Up</a></p>
     </main>
-
-
-    <script>
-        document.querySelector('.change-password-container form').addEventListener('submit', function (e) {
-            const pwd = document.getElementById('newpass').value;
-            const cpwd = document.getElementById('confirmpass').value;
-            if (pwd !== cpwd) {
-                alert('Passwords do not match!');
-                e.preventDefault();
-            } else {
-                e.preventDefault(); // Prevent default form submission
-                alert('Login successful! Redirecting to Home page.');
-                window.location.href = "home.html";
-            }
-        });
-    </script>
 
 </body>
 
